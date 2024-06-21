@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Write your CSS here 
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E*/
+
+        body   {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container  {
+            display: grid;
+            grid-template-rows: 200px 100px 150px 23px;
+            grid-template-columns: 65px 160px 148px 100px;
+            background-color: #000;
+            gap: 9px;
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px #000;
+        }
+
+        .red   {
+            background-color: #E72F24;
+            grid-column: span 2;
+        }
+
+        .white1 {
+            grid-column: span 2;
+        }
+
+        .white2 {
+            grid-row: span 2;
+        }
+
+        .white3 {
+            grid-column: span 2;
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+        }
+
+        .color  {
+            background-color: #F0F1EC;
+        }
+
+        .yellow{
+            background-color: #F9D01E;
+            grid-row: span 2;
+        }
+
+        .blue  {
+            background-color: #004592;
+            border-bottom: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="color white1"></div>
+        <div class="color white3"></div>
+        <div class="color white3"></div>
+        <div class="yellow"></div>
+        <div class="color white2"></div>
+        <div class="blue"></div>
+        <div class="color white2"></div>
+        <div class="color"></div>
+    </div>
+</body>
+</html>
